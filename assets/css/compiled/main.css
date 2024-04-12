@@ -5240,6 +5240,11 @@ pre {
   text-underline-offset: 4px;
 }
 
+sup + sup :before {
+	content: ', ';
+	color: white;
+}
+
 /* Gallery Specific Styles */
 
 .grid-w10 {
