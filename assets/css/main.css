@@ -481,6 +481,19 @@ sup + sup :before {
 	color: white;
 }
 
+.edgeLabels .edgeLabel:empty {
+	display: none;
+}
+.edgeLabels .edgeLabel {
+	padding: 4px;
+	border-radius: 4px;
+}
+
+:is(:where(.dark) .edgeLabel) {
+  color: white !important;
+  background-color: #101010 !important;
+}
+
 /* Gallery Specific Styles */
 .grid-w10 { width: calc(10% - 5px); margin: 0px !important; }
 .grid-w15 { width: calc(15% - 5px); margin: 0px !important; }

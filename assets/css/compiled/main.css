@@ -5245,6 +5245,20 @@ sup + sup :before {
 	color: white;
 }
 
+.edgeLabels .edgeLabel:empty {
+	display: none;
+}
+.edgeLabels .edgeLabel {
+	padding: 4px;
+	border-radius: 4px;
+}
+
+:is(:where(.dark) .edgeLabel) {
+  color: white !important;
+  background-color: #101010 !important;
+}
+
+
 /* Gallery Specific Styles */
 
 .grid-w10 {
