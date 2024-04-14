@@ -476,39 +476,6 @@ pre {
   text-underline-offset: 4px;
 }
 
-sup + sup :before {
-	content: ', ';
-	color: white;
-}
-
-.edgeLabels .edgeLabel:empty {
-	display: none;
-}
-.edgeLabels .edgeLabel {
-	padding: 4px;
-	border-radius: 4px;
-}
-
-:root {
-	--mermaid-edge-background: #1a1a1ac0;
-	--mermaid-edge-color: rgba(var(--color-primary-400)); /* #7b7b7b #00ff73; */
-	--mermaid-edge-edge-color: #5f5f5f;
-}
-
-:is(:where(.dark) .edgeLabel) {
-  color: white !important;
-  background-color: var(--mermaid-edge-background) !important;
-}
-
-:is(:where(.dark) .flowchart-link) {
-	stroke: var(--mermaid-edge-color) !important;
-}
-
-:is(:where(.dark) .marker) {
-	stroke: var(--mermaid-edge-edge-color) !important;
-	fill: var(--mermaid-edge-color) !important;
-}
-
 /* Gallery Specific Styles */
 .grid-w10 { width: calc(10% - 5px); margin: 0px !important; }
 .grid-w15 { width: calc(15% - 5px); margin: 0px !important; }
